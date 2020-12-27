@@ -13,3 +13,15 @@ function twoSum(array, target){
   return []
 }
 
+//QUESTION 2 VALIDATING A SUBSEQUENCE
+//GIVEN AN ARRAY AND A SUBSEQUENCE CHECK IF THE SUBSEQUENCE OCCURS IN THE ARRAY
+
+function subSequence(array, sequence){
+  let counter = 0
+  for(let item of array){
+    if(item == sequence[counter]){
+      counter += 1
+    }
+  }
+  return counter == sequence.length
+}
