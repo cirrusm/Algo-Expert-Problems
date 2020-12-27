@@ -45,3 +45,13 @@ function closest(tree, number){
   }
   return closest
 }
+
+//QUESTION 4 BRANCH SUMS
+// RETURN LIST OF BRANCH SUMS GIVEN A BINARY TREE
+
+function branchSums(root){
+  sums = []
+  calculateBranchSums(root, 0, sums)
+  return sums
+}
+
