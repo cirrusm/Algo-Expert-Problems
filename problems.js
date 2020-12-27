@@ -25,3 +25,23 @@ function subSequence(array, sequence){
   }
   return counter == sequence.length
 }
+
+//QUESTION 3 FIND CLOSEST VALUE IN BST
+
+function closest(tree, number){
+  let currentNode = tree
+  let closest = tree.value
+  while(currentNode !== null){
+    if(Math.abs(target- closest) > Math.abs(target - currentNode.value)){
+      closest = currentNode.value
+    }
+    if(target < currentNode.value){
+      currentNode = currentNode.left
+    }else if (target > currentNode.value){
+      currentNode = currentNode.right
+    }else{
+      break
+    }
+  }
+  return closest
+}
