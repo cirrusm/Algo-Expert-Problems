@@ -107,11 +107,24 @@ class Node {
     return this;
   }
 
-  depthFirstSearch(array){
-    array.push(this.name)
-    for(let child of this.children){
-      child.depthFirstSearch(array)
+  depthFirstSearch(array) {
+    array.push(this.name);
+    for (let child of this.children) {
+      child.depthFirstSearch(array);
     }
-    return array
+    return array;
   }
+}
+
+//QUESTION 7
+//NTH FIBONACCI
+
+function getNthFib(n) {
+  let fibs = [0, 1];
+  if (n < 0) return null;
+  if (n <= 2) return fibs[n - 1];
+  for (let i = 2; i < n; i++) {
+    fibs.push(fibs[i - 1] + fibs[i - 2]);
+  }
+  return fibs[n - 1];
 }
