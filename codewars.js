@@ -90,3 +90,19 @@ function toWeirdCase(string){
     }    
   return answer
     }
+
+
+  //WRITE A FUNCTION THAT TAKES IN A STRING AND RETURNS AN ARRAY OF THE STRING SPLIT INTO PAIRS
+
+  function solution(str){
+    let answer = []
+    let counter = 0
+    for(let i =0; i < str.length; i+=2){
+      if(i == str.length - 1){
+        answer.push(`${str[i]}_`)
+      }else{
+   answer.push(`${str[i]}${str[i+1]}`)
+      }
+      }
+   return answer
+ }
