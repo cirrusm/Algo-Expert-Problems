@@ -18,7 +18,6 @@ def subsequence(array, sub):
     for i in range(len(array)):
         if array[i] == sub[counter]:
             counter += 1
-    if counter = len(sub):
-        return True
-    else:
+        if counter = len(sub):
+            return True
         return False
