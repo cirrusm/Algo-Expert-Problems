@@ -4,7 +4,8 @@
 def targetSum(array, target):
     hash = {}
     for number in array:
-        if number not in hash:
+        if target - number in hash:
+            return [number, target - number]
+        else:
             hash[number] = True
-        for storedNum in hash:
-            if number + storedNum = 
+    return "nah"
