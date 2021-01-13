@@ -9,3 +9,16 @@ def targetSum(array, target):
         else:
             hash[number] = True
     return "nah"
+
+#QUESTION 2 VALIDATING A SUBSEQUENCE
+#GIVEN AN ARRAY AND A SUBSEQUENCE CHECK IF THE SUBSEQUENCE OCCURS IN THE ARRay
+
+def subsequence(array, sub):
+    counter = 0
+    for i in range(len(array)):
+        if array[i] == sub[counter]:
+            counter += 1
+    if counter = len(sub):
+        return True
+    else:
+        return False
