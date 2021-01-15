@@ -21,3 +21,10 @@ def subsequence(array, sub):
         if counter = len(sub):
             return True
         return False
+
+## FIND CLOSEST VALUE IN A BST
+
+def closest(tree, number):
+    currentNode = tree
+    closest = tree.value
+    
