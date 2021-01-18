@@ -1,6 +1,10 @@
 // QUESTION  1 Two-Sum Number
 //GIVEN AN ARRAY AND TAGET SUM FIND TWO NUMBERS THAT SUM UP TO THE TARGET SUM
 
+//create hash table
+//For every number in array, check if its complement is in the hashtable, if not add the number to the hashtable
+//Keep going until you find a complement or run out of numbers in the array
+
 function twoSum(array, target) {
   let hashTable = {};
   for (let number of array) {
