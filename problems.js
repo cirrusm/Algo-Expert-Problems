@@ -33,6 +33,12 @@ function subSequence(array, sequence) {
 }
 
 //QUESTION 3 FIND CLOSEST VALUE IN BST
+//Initialize current node to be the root node
+// Initialize closest to be value of root node
+//Check if the node you are on is closer to the current closest value you have stored
+//Update it if current node is closer than old closest
+//If node your on is greater than target go right, else go left
+//Once you hit a null node, return what you have stored as the closest node
 
 function closest(tree, number) {
   let currentNode = tree;
