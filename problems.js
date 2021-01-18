@@ -19,6 +19,8 @@ function twoSum(array, target) {
 
 //QUESTION 2 VALIDATING A SUBSEQUENCE
 //GIVEN AN ARRAY AND A SUBSEQUENCE CHECK IF THE SUBSEQUENCE OCCURS IN THE ARRAY
+//Initialize a counter that acts as a pointer for the given sequence
+//Loop through array, incrementing the counter each time you hit an index that is equal to the index of the sequence at the counter
 
 function subSequence(array, sequence) {
   let counter = 0;
