@@ -59,7 +59,10 @@ function closest(tree, number) {
 }
 
 //QUESTION 4 BRANCH SUMS
-// RETURN LIST OF BRANCH SUMS GIVEN A BINARY TREE
+// RETURN LIST OF BRANCH SUMS GIVEN A BINARY TREEE
+//WRITE RECURSIVE FUNCTION TO GO DOWN EACH BRANCH
+//Keep running it on left and right node as long as each exist. 
+// If they dont exist, push that sum to the array and return
 
 function branchSums(root) {
   sums = [];
