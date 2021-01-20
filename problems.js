@@ -98,13 +98,15 @@ function nodeDepths(root) {
 }
 
 //RECURSIVE SOLUTION FOR QUESTION 5
+//Add one to the root for each branch you go down
+//Stop when there is no left or right root
 
 function nodeDepths2(root, depth = 0) {
   if (root == null) return 0;
   return (
     depth +
     nodeDepths2(root.left, depth + 1) +
-    nodeDepths(root.right, depth + 1)
+    nodeDepths2(root.right, depth + 1)
   );
 }
 
